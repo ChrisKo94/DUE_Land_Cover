@@ -7,7 +7,17 @@ From Distance-Aware Architectures?". The methodology is largely based on the wor
 
 
 The individual python executable files are structured as follows:
-- Blah
+- data: Folder for storing the data
+- due: 
+  - layers: Individual python files for the DUE framework
+- lib: 
+  - datasets.py: read-in file for the data 
+  - evaluate_ood.py: evaluation file for OOD detection 
+  - utils.py: other utils
+- runs: Folder for storing the results
+- environment.yml: conda environment file
+- setup: setup file for the DUE framework
+- train_due.py: main file for training the DUE framework
 ---
 
 ## Requirements
@@ -22,7 +32,9 @@ The individual python executable files are structured as follows:
 
 ---
 
-All configs: `python train.py `
+All configs: `python train_due.py `
+
+Individual configs via argument parsing, e.g.: `python train_due.py --no_spectral_conv`
 
 ---
 
